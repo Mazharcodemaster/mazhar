@@ -7,7 +7,8 @@ import {
   SiNextdotjs, SiTypescript, SiTailwindcss, SiMui, SiFramer,
   SiRadixui, SiExpress, SiPrisma, SiDrizzle, SiJsonwebtokens,
   SiMongodb, SiPostgresql, SiFirebase, SiPostman, SiStripe,
-  SiWebrtc, SiZod
+  SiWebrtc, SiZod, SiStyledcomponents, SiRedux, SiJotai,
+  SiSocketdotio, SiMysql, SiMicrosoftsqlserver
 } from 'react-icons/si';
 import { AnimatedCard } from '@/components/ui/animated-card';
 import { CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -36,6 +37,12 @@ const iconMap: Record<string, React.ComponentType<any>> = {
   SiStripe,
   SiWebrtc,
   SiZod,
+  SiStyledcomponents,
+  SiRedux,
+  SiJotai,
+  SiSocketdotio,
+  SiMysql,
+  SiMicrosoftsqlserver,
 };
 
 export function TechnologiesSection() {

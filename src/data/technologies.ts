@@ -15,6 +15,9 @@ export const technologies: Technology[] = [
   { name: 'Material-UI', category: 'Frontend', icon: 'SiMui', color: '#007FFF' },
   { name: 'Framer Motion', category: 'Frontend', icon: 'SiFramer', color: '#0055FF' },
   { name: 'Shadcn UI', category: 'Frontend', icon: 'SiRadixui', color: '#000000' },
+  { name: 'Styled Components', category: 'Frontend', icon: 'SiStyledcomponents', color: '#DB7093' },
+  { name: 'Redux Toolkit', category: 'Frontend', icon: 'SiRedux', color: '#764ABC' },
+  { name: 'Jotai', category: 'Frontend', icon: 'SiJotai', color: '#000000' },
   
   // Backend
   { name: 'Node.js', category: 'Backend', icon: 'FaNodeJs', color: '#339933' },
@@ -22,11 +25,15 @@ export const technologies: Technology[] = [
   { name: 'Prisma ORM', category: 'Backend', icon: 'SiPrisma', color: '#2D3748' },
   { name: 'Drizzle ORM', category: 'Backend', icon: 'SiDrizzle', color: '#C5F74F' },
   { name: 'JWT', category: 'Backend', icon: 'SiJsonwebtokens', color: '#000000' },
+  { name: 'Mongoose', category: 'Backend', icon: 'SiMongodb', color: '#47A248' },
+  { name: 'WebSocket', category: 'Backend', icon: 'SiSocketdotio', color: '#010101' },
   
   // Database
   { name: 'MongoDB', category: 'Database', icon: 'SiMongodb', color: '#47A248' },
   { name: 'PostgreSQL', category: 'Database', icon: 'SiPostgresql', color: '#336791' },
   { name: 'Firebase', category: 'Database', icon: 'SiFirebase', color: '#FFCA28' },
+  { name: 'MySQL', category: 'Database', icon: 'SiMysql', color: '#4479A1' },
+  { name: 'SQL Server', category: 'Database', icon: 'SiMicrosoftsqlserver', color: '#CC2927' },
   
   // Mobile
   { name: 'React Native', category: 'Mobile', icon: 'FaReact', color: '#61DAFB' },

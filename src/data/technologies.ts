@@ -25,7 +25,7 @@ export const technologies: Technology[] = [
   { name: 'Prisma ORM', category: 'Backend', icon: 'SiPrisma', color: '#2D3748' },
   { name: 'Drizzle ORM', category: 'Backend', icon: 'SiDrizzle', color: '#C5F74F' },
   { name: 'JWT', category: 'Backend', icon: 'SiJsonwebtokens', color: '#000000' },
-  { name: 'Mongoose', category: 'Backend', icon: 'SiMongodb', color: '#47A248' },
+  { name: 'Mongoose', category: 'Backend', icon: 'SiMongoose', color: '#47A248' },
   { name: 'WebSocket', category: 'Backend', icon: 'SiSocketdotio', color: '#010101' },
   
   // Database

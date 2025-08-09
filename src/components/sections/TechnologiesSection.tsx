@@ -5,10 +5,10 @@ import {
 } from 'react-icons/fa';
 import { 
   SiNextdotjs, SiTypescript, SiTailwindcss, SiMui, SiFramer,
-  SiRadixui, SiExpress, SiPrisma, SiDrizzle, SiJsonwebtokens,
+  SiRadixui, SiExpress, SiPrisma, SiDrizzle, SiJsonwebtokens, SiJotai,
   SiMongodb, SiPostgresql, SiFirebase, SiPostman, SiStripe,
-  SiWebrtc, SiZod, SiStyledcomponents, SiRedux, SiJotai,
-  SiSocketdotio, SiMysql, SiMicrosoftsqlserver
+  SiWebrtc, SiZod, SiStyledcomponents, SiRedux,
+  SiSocketdotio, SiMysql, SiMicrosoftsqlserver, SiMongoose
 } from 'react-icons/si';
 import { AnimatedCard } from '@/components/ui/animated-card';
 import { CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -43,6 +43,7 @@ const iconMap: Record<string, React.ComponentType<any>> = {
   SiSocketdotio,
   SiMysql,
   SiMicrosoftsqlserver,
+  SiMongoose,
 };
 
 export function TechnologiesSection() {

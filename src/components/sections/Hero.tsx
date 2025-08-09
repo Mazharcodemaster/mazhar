@@ -4,11 +4,12 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, Download, Github, Linkedin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { FaReact, FaNodeJs, FaJs } from 'react-icons/fa';
-import { SiMongodb, SiExpress, SiTypescript } from 'react-icons/si';
+import { SiMongodb, SiExpress, SiTypescript, SiNextdotjs } from 'react-icons/si';
 
 export function Hero() {
   const techIcons = [
     { Icon: FaReact, name: 'React', color: '#61DAFB' },
+    { Icon: SiNextdotjs, name: 'Next.js', color: '#000000' },
     { Icon: FaNodeJs, name: 'Node.js', color: '#339933' },
     { Icon: SiMongodb, name: 'MongoDB', color: '#47A248' },
     { Icon: SiExpress, name: 'Express', color: '#000000' },
@@ -77,8 +78,7 @@ export function Hero() {
             transition={{ delay: 0.9 }}
             className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed"
           >
-            Passionate about building modern web applications with the MERN stack
-            and creating seamless mobile experiences with React Native.
+            I am Full Stack Developer with hands-on experience in building scalable web applications using the MERN stack (MongoDB, Express.js, React.js, Node.js). Skilled in designing responsive UIs, developing robust backend APIs, and integrating third-party services like Stripe and Firebase. Passionate about clean code, performance optimization, and delivering user-focused solutions. Proven ability to work in both startup and team environments.
           </motion.p>
 
           {/* CTA Buttons */}
@@ -108,7 +108,7 @@ export function Hero() {
             className="flex justify-center space-x-6"
           >
             <motion.a
-              href="https://github.com/mazhar"
+              href="https://github.com/Mazharcodemaster"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.1, y: -2 }}
@@ -117,7 +117,7 @@ export function Hero() {
               <Github className="h-6 w-6" />
             </motion.a>
             <motion.a
-              href="https://linkedin.com/in/mazhar-manzoor"
+              href="https://www.linkedin.com/in/mazhar-manzoor-413726285/"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.1, y: -2 }}

@@ -6,17 +6,17 @@ export function Footer() {
   const socialLinks = [
     {
       name: 'GitHub',
-      url: 'https://github.com/mazhar',
+      url: 'https://github.com/Mazharcodemaster',
       icon: FaGithub,
     },
     {
       name: 'LinkedIn',
-      url: 'https://linkedin.com/in/mazhar-manzoor',
+      url: 'https://www.linkedin.com/in/mazhar-manzoor-413726285/',
       icon: FaLinkedin,
     },
     {
       name: 'Email',
-      url: 'mailto:mazhar@example.com',
+      url: 'mailto:mazharkamboh914@gmail.com',
       icon: FaEnvelope,
     },
   ];

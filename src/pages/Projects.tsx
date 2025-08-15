@@ -1,4 +1,3 @@
-import React from 'react';
 import { ProjectsSection } from '@/components/sections/ProjectsSection';
 
 export function Projects() {

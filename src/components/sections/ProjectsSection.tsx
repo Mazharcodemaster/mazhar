@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { ExternalLink, Github, Star } from 'lucide-react';
 import { AnimatedCard } from '@/components/ui/animated-card';

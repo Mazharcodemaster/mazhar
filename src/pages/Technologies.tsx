@@ -1,4 +1,3 @@
-import React from 'react';
 import { TechnologiesSection } from '@/components/sections/TechnologiesSection';
 
 export function Technologies() {

@@ -5,9 +5,9 @@ import {
 } from 'react-icons/fa';
 import { 
   SiNextdotjs, SiTypescript, SiTailwindcss, SiMui, SiFramer,
-  SiRadixui, SiExpress, SiPrisma, SiDrizzle, SiJsonwebtokens, SiJotai,
+  SiRadixui, SiExpress, SiPrisma, SiDrizzle, SiJsonwebtokens,
   SiMongodb, SiPostgresql, SiFirebase, SiPostman, SiStripe,
-  SiWebrtc, SiZod, SiStyledcomponents, SiRedux,
+  SiWebrtc, SiZod, SiStyledcomponents, SiRedux, SiJotai,
   SiSocketdotio, SiMysql, SiMicrosoftsqlserver, SiMongoose
 } from 'react-icons/si';
 import { AnimatedCard } from '@/components/ui/animated-card';

@@ -1,0 +1,32 @@
+
+name: Deploy My Portfolio Website to Vercel
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+jobs:
+  build-site:
+   name: Build Website
+   runs-on: ubuntu-latest   
+   steps:
+    - name: Checkout Code
+      uses: actions/checkout@v4
+    - name: Install Dependencies
+      run : npm install
+    - name : Make Build
+      run : npm run build
+  deploy:
+   name: Deploy to Vercel
+   runs-on: ubuntu-latest
+   steps:
+    - name: Checkout Code
+      uses: actions/checkout@v4
+    - name: Need Build
+      need: build-site
+    - name: Install Vercel
+      run: npm install -g vercel
+    - name: Deploy to Vercel
+       run: vercel --token=${{ secrets.VERCEL_TOKEN }} --prod --yes
+
+      

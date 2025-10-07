@@ -93,10 +93,17 @@ export function Hero() {
                 <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
               </Link>
             </Button>
-            <Button variant="outline" size="lg" className="group">
-              <Download className="mr-2 h-4 w-4 group-hover:scale-110 transition-transform" />
-              Download Resume
+            <Button asChild variant="outline" size="lg" className="group">
+              <a
+                href="/public/mazhar.pdf"
+                download="Mazhar_Manzoor_Resume.pdf"
+                className="flex items-center"
+              >
+                <Download className="mr-2 h-4 w-4 group-hover:scale-110 transition-transform" />
+                Download Resume
+              </a>
             </Button>
+
           </motion.div>
 
           {/* Social Links */}
@@ -108,6 +115,7 @@ export function Hero() {
           >
             <motion.a
               href="https://github.com/Mazharcodemaster"
+
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.1, y: -2 }}
@@ -123,7 +131,7 @@ export function Hero() {
               className="p-3 rounded-full bg-muted/50 hover:bg-primary/10 transition-colors"
             >
               <Linkedin className="h-6 w-6" />
-            </motion.a>
+            </motion.a> 
           </motion.div>
 
           {/* Tech Stack */}
@@ -134,7 +142,7 @@ export function Hero() {
             className="pt-12"
           >
             <p className="text-sm text-muted-foreground mb-6">Built with</p>
-            <div className="flex flex-wrap justify-center gap-6">
+            <div className="flex flex-wrap justify-center gap-6  py-2">
               {techIcons.map((tech, index) => (
                 <motion.div
                   key={tech.name}
@@ -145,8 +153,8 @@ export function Hero() {
                   className="p-3 rounded-xl bg-muted/30 backdrop-blur-sm hover:bg-muted/50 transition-colors cursor-pointer group"
                   style={{ '--tech-color': tech.color } as React.CSSProperties}
                 >
-                  <tech.Icon 
-                    className="h-8 w-8 text-muted-foreground group-hover:text-[var(--tech-color)] transition-colors" 
+                  <tech.Icon
+                    className="h-8 w-8 text-muted-foreground group-hover:text-[var(--tech-color)] transition-colors"
                   />
                 </motion.div>
               ))}

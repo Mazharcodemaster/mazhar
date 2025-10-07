@@ -15,7 +15,7 @@ export function Footer() {
     },
     {
       name: 'Email',
-      url: 'mailto:mazharkamboh914@gmail.com',
+      url: 'https://mail.google.com/mail/?view=cm&fs=1&to=mazharkamboh914@gmail.com&su=Hello%20Mazhar&body=I%20want%20to%20connect%20with%20you.',
       icon: FaEnvelope,
     },
   ];

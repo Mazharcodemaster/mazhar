@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
+import { useEffect, useState } from 'react';
 import * as z from 'zod';
 import { Send, MapPin, Phone, Mail, CheckCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -9,6 +10,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { AnimatedCard } from '@/components/ui/animated-card';
 import { CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { useToast } from '@/hooks/use-toast';
+import { initEmailJS, sendEmail } from '@/lib/email';
 
 const contactSchema = z.object({
   name: z.string().min(2, 'Name must be at least 2 characters'),
@@ -20,7 +22,12 @@ type ContactFormData = z.infer<typeof contactSchema>;
 
 export function ContactSection() {
   const { toast } = useToast();
-  const [isSubmitted, setIsSubmitted] = React.useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  // Initialize EmailJS when component mounts
+  useEffect(() => {
+    initEmailJS();
+  }, []);
 
   const {
     register,
@@ -32,21 +39,34 @@ export function ContactSection() {
   });
 
   const onSubmit = async (data: ContactFormData) => {
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    
-    console.log('Form submitted:', data);
-    setIsSubmitted(true);
-    
-    toast({
-      title: "Message sent successfully!",
-      description: "Thank you for reaching out. I'll get back to you soon.",
-    });
+    try {
+      // Send email using EmailJS
+      const result = await sendEmail(data);
 
-    reset();
-    
-    // Reset success state after animation
-    setTimeout(() => setIsSubmitted(false), 3000);
+      if (result.success) {
+        setIsSubmitted(true);
+        
+        toast({
+          title: "Message sent successfully!",
+          description: "Thank you for reaching out. I'll get back to you soon.",
+        });
+
+        reset();
+        
+        // Reset success state after animation
+        setTimeout(() => setIsSubmitted(false), 3000);
+      } else {
+        throw new Error('Failed to send email');
+      }
+    } catch (error) {
+      console.error('Error sending email:', error);
+      
+      toast({
+        title: "Failed to send message",
+        description: "There was an error sending your message. Please try again or contact me directly.",
+        variant: "destructive",
+      });
+    }
   };
 
   const contactInfo = [
@@ -212,7 +232,7 @@ export function ContactSection() {
               </CardContent>
             </AnimatedCard>
 
-            <AnimatedCard delay={0.4}>
+            {/* <AnimatedCard delay={0.4}>
               <CardContent className="text-center p-8">
                 <motion.div
                   whileHover={{ scale: 1.05 }}
@@ -224,7 +244,7 @@ export function ContactSection() {
                   </p>
                 </motion.div>
               </CardContent>
-            </AnimatedCard>
+            </AnimatedCard> */}
           </div>
         </div>
       </div>

@@ -19,7 +19,7 @@ export const projects: Project[] = [
     technologies: ['Next.js', 'Tailwind CSS', 'MUI', 'Stripe', 'Firebase', 'Styled-Components'],
     liveUrl: 'https://fancentral.vercel.app',
     featured: true,
-    image: 'https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg'
+    image: 'public/manstanding.svg'
   },
   {
     id: 'ecommerce-platform',

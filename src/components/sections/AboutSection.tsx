@@ -15,16 +15,16 @@ export function AboutSection() {
       title: 'Specialization',
       description: 'Full-stack web development with MERN stack and React Native mobile development',
     },
-    {
-      icon: Rocket,
-      title: 'Experience',
-      description: 'Built production-ready applications including e-learning platforms and e-commerce solutions',
-    },
-    {
-      icon: Users,
-      title: 'Collaboration',
-      description: 'Experienced in working with teams and delivering projects at ArSwift Pvt Ltd',
-    },
+   {
+    icon: Rocket,
+    title: 'Experience',
+    description: 'Experienced in building and deploying production-ready applications, including e-learning platforms, e-commerce solutions, and digital content/e-book platforms. My work also spans other sectors, with experience in Social Media, Fintech, and Healthcare applications.',
+  },
+  {
+    icon: Users,
+    title: 'Collaboration',
+    description: 'Experienced in working with diverse teams at both ArSwift and ACME ONE Software. I actively contribute to code reviews and have a track record of mentoring junior developers, fostering a culture of shared learning and continuous improvement.',
+  },
   ];
 
   return (
@@ -44,10 +44,8 @@ export function AboutSection() {
             </span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            I hold an Associate Degree in Computer Science from Riphah International University 
-            and have experience in full-stack web development, especially in the MERN stack and 
-            mobile apps using React Native. I'm passionate about creating modern, scalable 
-            applications that solve real-world problems.
+              I hold an Associate Degree in Computer Science from Riphah International University and have completed professional certifications in web and mobile application development from SMIT Fsd. I am passionate about creating modern, scalable applications that solve real-world problems.
+
           </p>
         </motion.div>
 

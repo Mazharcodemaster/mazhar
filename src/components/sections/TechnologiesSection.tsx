@@ -1,18 +1,23 @@
 import { motion } from 'framer-motion';
-import { 
-  FaReact, FaNodeJs, FaJs, FaGitAlt, FaGithub 
+import {
+  FaReact, FaNodeJs, FaJs, FaGitAlt, FaGithub,
+  FaUserLock
 } from 'react-icons/fa';
-import { 
+import {
   SiNextdotjs, SiTypescript, SiTailwindcss, SiMui, SiFramer,
   SiRadixui, SiExpress, SiPrisma, SiDrizzle, SiJsonwebtokens,
   SiMongodb, SiPostgresql, SiFirebase, SiPostman, SiStripe,
-  SiWebrtc, SiZod, SiStyledcomponents, SiRedux, SiJotai,
-  SiSocketdotio, SiMysql, SiMicrosoftsqlserver, SiMongoose
+  SiWebrtc, SiZod, SiStyledcomponents, SiRedux,
+  SiSocketdotio, SiMysql, SiMongoose, SiDocker, SiKubernetes,SiAwsamplify,
+   SiVercel, SiNetlify, SiHeroku, SiDigitalocean, SiLinux, SiUbuntu, SiNginx,
+   SiExpo, SiReactrouter, SiReact, SiMaterialdesign, 
+  SiReacthookform, SiReactquery, SiFacebook, SiFastlane
 } from 'react-icons/si';
 import { AnimatedCard } from '@/components/ui/animated-card';
 import { CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { technologies, getTechnologiesByCategory } from '@/data/technologies';
-
+import { getTechnologiesByCategory } from '@/data/technologies';
+import { DiMsqlServer } from "react-icons/di";
+import { SlGhost } from "react-icons/sl";
 const iconMap: Record<string, React.ComponentType<any>> = {
   FaReact,
   FaNodeJs,
@@ -38,18 +43,37 @@ const iconMap: Record<string, React.ComponentType<any>> = {
   SiZod,
   SiStyledcomponents,
   SiRedux,
-  SiJotai,
+  SlGhost,
   SiSocketdotio,
   SiMysql,
-  SiMicrosoftsqlserver,
+  DiMsqlServer,
   SiMongoose,
+  FaUserLock,
+  SiDocker,
+  SiKubernetes,
+  SiVercel,
+  SiNetlify,
+  SiHeroku,
+  SiDigitalocean,
+  SiLinux,
+  SiUbuntu,
+  SiNginx,
+  SiAwsamplify,
+  SiExpo,
+  SiReactrouter,
+  SiReact,
+  SiMaterialdesign,
+  SiReacthookform,
+  SiReactquery,
+  SiFacebook,
+  SiFastlane
 };
 
 export function TechnologiesSection() {
-  const categories = ['Frontend', 'Backend', 'Database', 'Mobile', 'Tools'] as const;
+  const categories = ['Frontend', 'Backend', 'Database', 'Mobile', 'Tools', 'DevOps'] as const;
 
   return (
-    <section className="py-20 relative">
+    <section className="py-20 relative ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -68,14 +92,14 @@ export function TechnologiesSection() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 p-2 lg:grid-cols-2  xl:grid-cols-3 gap-8">
           {categories.map((category, categoryIndex) => {
             const categoryTechs = getTechnologiesByCategory(category);
-            
+
             return (
               <AnimatedCard key={category} delay={categoryIndex * 0.1}>
                 <CardHeader>
-                  <CardTitle className="text-xl flex items-center space-x-2">
+                  <CardTitle className="text-xl  flex items-center space-x-2">
                     <span>{category}</span>
                   </CardTitle>
                 </CardHeader>
@@ -83,7 +107,7 @@ export function TechnologiesSection() {
                   <div className="grid grid-cols-2 gap-4">
                     {categoryTechs.map((tech, index) => {
                       const IconComponent = iconMap[tech.icon];
-                      
+
                       return (
                         <motion.div
                           key={tech.name}
@@ -95,7 +119,7 @@ export function TechnologiesSection() {
                           className="flex items-center space-x-3 p-3 rounded-lg bg-muted/30 hover:bg-muted/50 transition-colors cursor-pointer group"
                         >
                           {IconComponent && (
-                            <IconComponent 
+                            <IconComponent
                               className="h-6 w-6 transition-colors"
                               style={{ color: tech.color }}
                             />

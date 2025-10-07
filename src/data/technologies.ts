@@ -67,7 +67,8 @@ export const technologies: Technology[] = [
   // { name: 'DigitalOcean', category: 'DevOps', icon: 'SiDigitalocean', color: '#0080FF' },
   // { name: 'Linux', category: 'DevOps', icon: 'SiLinux', color: '#FCC624' },
   // { name: 'Ubuntu', category: 'DevOps', icon: 'SiUbuntu', color: '#E95420' },
-  // { name: 'Nginx', category: 'DevOps', icon: 'SiNginx', color: '#009639' },
+  // { name: 'Nginx', category: 'DevOps'
+  // , icon: 'SiNginx', color: '#009639' },
 ];
 
 export const getTechnologiesByCategory = (category: Technology['category']) => {

@@ -58,16 +58,16 @@ export const technologies: Technology[] = [
   { name: 'WebRTC', category: 'Tools', icon: 'SiWebrtc', color: '#333333' },
   { name: 'Zod', category: 'Tools', icon: 'SiZod', color: '#3E67B1' },
  // DevOps
- { name: 'Docker', category: 'DevOps', icon: 'SiDocker', color: '#2496ED' },
-  { name: 'Kubernetes', category: 'DevOps', icon: 'SiKubernetes', color: '#326CE5' },
+//  { name: 'Docker', category: 'DevOps', icon: 'SiDocker', color: '#2496ED' },
+  // { name: 'Kubernetes', category: 'DevOps', icon: 'SiKubernetes', color: '#326CE5' },
   { name: 'AWS', category: 'DevOps', icon: 'SiAwsamplify', color: '#FF9900' },
   { name: 'Vercel', category: 'DevOps', icon: 'SiVercel', color: '#000000' },
   { name: 'Netlify', category: 'DevOps', icon: 'SiNetlify', color: '#00C7B7' },
-  { name: 'Heroku', category: 'DevOps', icon: 'SiHeroku', color: '#430098' },
-  { name: 'DigitalOcean', category: 'DevOps', icon: 'SiDigitalocean', color: '#0080FF' },
-  { name: 'Linux', category: 'DevOps', icon: 'SiLinux', color: '#FCC624' },
-  { name: 'Ubuntu', category: 'DevOps', icon: 'SiUbuntu', color: '#E95420' },
-  { name: 'Nginx', category: 'DevOps', icon: 'SiNginx', color: '#009639' },
+  // { name: 'Heroku', category: 'DevOps', icon: 'SiHeroku', color: '#430098' },
+  // { name: 'DigitalOcean', category: 'DevOps', icon: 'SiDigitalocean', color: '#0080FF' },
+  // { name: 'Linux', category: 'DevOps', icon: 'SiLinux', color: '#FCC624' },
+  // { name: 'Ubuntu', category: 'DevOps', icon: 'SiUbuntu', color: '#E95420' },
+  // { name: 'Nginx', category: 'DevOps', icon: 'SiNginx', color: '#009639' },
 ];
 
 export const getTechnologiesByCategory = (category: Technology['category']) => {

@@ -4,7 +4,7 @@ Welcome to my personal portfolio website built with **React.js**, **Tailwind CSS
 This site showcases my projects, technical skills, and background as a **Full Stack Developer** specializing in the **MERN stack** and **React Native**.
 
 ## 🌐 Live Website
-[Visit Portfolio →](https://mazhar-portfolio.netlify.app)
+[Visit Portfolio →](https://mazhar-nu.vercel.app/technologies)
 
 ---
 
@@ -95,24 +95,6 @@ src/
 
 ---
 
-## 🚀 Featured Projects
-
-### **FanCentral** - E-Learning Platform
-A comprehensive e-learning platform built with Next.js that enables users to purchase, read, and track books online.
-
-**Key Features:**
-- Secure user authentication with JWT and Firebase
-- Online book purchasing with Stripe integration
-- Real-time reading progress tracking
-- Responsive dashboard interface
-- Built at ArSwift Pvt Ltd
-
-**Tech Stack:** Next.js, Tailwind CSS, MUI, Stripe, Firebase, Styled-Components
-
-[Live Demo →](https://fancentral.vercel.app)
-
----
-
 ## 🎨 Design Philosophy
 
 This portfolio embraces a **modern, futuristic aesthetic** with:
@@ -186,15 +168,9 @@ The portfolio is fully responsive and optimized for:
 
 ## 📧 Contact
 
-- **Email**: mazhar@example.com
-- **LinkedIn**: [linkedin.com/in/mazhar-manzoor](https://linkedin.com/in/mazhar-manzoor)
-- **GitHub**: [github.com/mazhar](https://github.com/mazhar)
-
----
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
+- **Email**: mazharkamboh914@gmail.com
+- **LinkedIn**: [linkedin.com/in/mazhar-manzoor](https://www.linkedin.com/in/mazhar-manzoor-413726285/)
+- **GitHub**: [github.com/mazhar](https://github.com/Mazharcodemaster)
 
 ---
 

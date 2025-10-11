@@ -17,9 +17,9 @@ export const projects: Project[] = [
     description: 'A fully functional e-learning platform built using Next.js (App Router). It allows users to buy, read, and track books online in a clean dashboard experience.',
     longDescription: 'FanCentral is a comprehensive e-learning platform that revolutionizes the way users interact with digital books. Built with modern web technologies, it provides a seamless experience for purchasing, reading, and tracking books online.',
     technologies: ['Next.js', 'Tailwind CSS', 'MUI', 'Stripe', 'Firebase', 'Styled-Components'],
-    liveUrl: 'https://res.cloudinary.com/djaqdmsau/image/upload/v1760167650/cmiubr9gmami34pmlljo.svg',
+    liveUrl: 'https://fancentral.vercel.app',
     featured: true,
-    image: 'public/manstanding.svg'
+    image: 'https://res.cloudinary.com/djaqdmsau/image/upload/v1760167650/cmiubr9gmami34pmlljo.svg'
   },
   {
     id: 'ecommerce-platform',
